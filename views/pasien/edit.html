@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container mt-5">
-        <h3>Tambah Pasien</h3>
+        <h3>Ubah Pasien</h3>
         <a href="/pasien" class="btn btn-dark btn-md">
             Kembali
         </a>
@@ -78,6 +78,7 @@
                 </div>
             </div>
             <div class="form-group mt-2">
+                <input type="hidden" name="id" value="{{ .pasien.Id}}">
                 <button type="submit" class="btn btn-primary">Simpan</button>
             </div>
         </form>
